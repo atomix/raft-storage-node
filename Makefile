@@ -1,18 +1,18 @@
 .PHONY: build
 
-VERSION := v0.4.0
+VERSION := v0.5.1
 
 DRAGONBOAT_IMPL := dragonboat
 DRAGONBOAT_REPO := atomix/dragonboat-raft-storage-node
-DRAGONBOAT_VERSION := v0.4.0
+DRAGONBOAT_VERSION := v0.5.1
 
 ETCD_IMPL := etcd
 ETCD_REPO := atomix/etcd-raft-storage-node
-ETCD_VERSION := v0.4.0
+ETCD_VERSION := v0.5.1
 
 CONSUL_IMPL := consul
 CONSUL_REPO := atomix/consul-raft-storage-node
-CONSUL_VERSION := v0.4.0
+CONSUL_VERSION := v0.5.1
 
 build: # @HELP build raft-storage-node Docker images
 	docker pull ${DRAGONBOAT_REPO}:${DRAGONBOAT_VERSION}
